@@ -1,0 +1,144 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #adaaaa;
+    background-image: linear-gradient(to bottom right,#260182, #fac6c6 );
+}
+
+header {
+    background-image: linear-gradient(to bottom right,#260182, #fac6c6 );
+    color: #fff;
+    padding: 1rem 0;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+nav ul li {
+    margin: 0 1rem;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+main {
+    padding: 2rem;
+}
+
+section {
+    margin-bottom: 2rem;
+}
+
+h1, h2 {
+    margin-bottom: 1rem;
+}
+
+.project {
+    background-color: #f4f4f4;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 5px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 300px;
+}
+
+input, textarea {
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+}
+
+button {
+    background-color: #4a4a4a;
+    color: #fff;
+    padding: 0.5rem;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #333;
+}
+
+footer {
+    background-color: #4a4a4a;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    bottom: 0;
+    width: 100%;
+}
+
+.skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    
+}
+
+.skill {
+    text-align: center;
+    margin: 1rem;
+    position: relative;
+}
+
+.pie-chart {
+    transform: rotate(-90deg);
+    transition: all 1s ease-in-out;
+    border-radius: 50%;
+    
+}
+
+.pie-chart-bg {
+    fill: none;
+    stroke: #efeff1;
+    stroke-width: 32;
+}
+
+.pie-chart-fill {
+    fill: none;
+    stroke-width: 32;
+    stroke-dasharray: 0 100;
+    transition: stroke-dasharray 1s ease-in-out;
+}
+
+.html-fill { stroke: #e34c26; }
+.css-fill { stroke: #264de4; }
+.js-fill { stroke: #f0db4f; }
+.java-fill { stroke: #007396; }
+.spring-fill { stroke: #6db33f; }
+.sql-fill { stroke: #00758f; }
+.aws-fill { stroke: #ff9900; }
+
+.skill-percentage {
+    position: absolute;
+    top: 60%;
+    left: 55%;
+    transform: translate(-50%, -50%);
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: black;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.skill {
+    animation: fadeIn 1s ease-in-out;
+}
